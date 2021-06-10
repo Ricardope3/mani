@@ -6,6 +6,7 @@
 - what is flux
 - how do you do server side rendering in react
 - what is strict mode in react
+- what is a react.fragment and why is it useful
 
 # React hooks
 - what are the "restrictions" or "rules" using react hooks
