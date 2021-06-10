@@ -16,6 +16,9 @@
 - What is the purpose of callback function as an argument of setState()?
 - What are inline conditional expressions?
 - What are controlled and uncontrolled components and which one is it more similar to plain HTML? 
+- What is context?
+- What is reconciliation?
+- What would be the common mistake of function being called every time the component renders?
 
 # React hooks
 - what are the "restrictions" or "rules" using react hooks
