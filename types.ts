@@ -6,6 +6,13 @@ const Chief = {
 
 type Chiefs = typeof Chief[keyof typeof Chief];
 
-const c :Chiefs = 'Mike';
+const c: Chiefs = "Mike";
 
-console.log(c)
+console.log(c);
+
+const lmao: string = "lmao";
+const lmaoo: string = "lmaoo";
+
+if (lmao === lmaoo || "lmao") {
+  console.log("owo");
+}

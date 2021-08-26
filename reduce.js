@@ -1,5 +1,5 @@
 class Exatec {
-    constructor(name, semester, major) {
+    constructor({name, semester, major}) {
         this.name = name;
         this.semester = semester;
         this.major = major;
@@ -10,23 +10,41 @@ const students = [
         name: 'Ricardo',
         semester: '9',
         major: 'ISC',
-        isGraduated : true
+        isGraduated: true
     }, {
 
         name: 'Gera',
         semester: '1',
         major: 'IBT',
-        isGraduated : false
+        isGraduated: false
     }, {
 
         name: 'Emmanuel',
         semester: '9',
         major: 'ISC',
-        isGraduated : true
+        isGraduated: true
     },
 ]
+
+let exatecsArray = students
+    .filter((a) => a.isGraduated === true)
+    .map(elem => {
+        delete elem.isGraduated
+        return new Exatec({...elem})
+    })
+
+
+
+
+// let message = "This years exatecs are: " + [...students].filter(({ ...a }) => a.isGraduated == true).reduce((a, b) => {
+//     let midString = a + b.name + " from " + (b.major ? b.major : b) + " and "
+//     return midString
+// }, "")
+
+// const message = exatecsArray.reduce((prev, curr) => `${prev} ${curr.name} from ${curr.major} and `, "This years exatecs are:")
+
 console.log(exatecsArray)
-console.log(message)
+// console.log(message)
 // Expected Output
 // [
 //     { name: 'Ricardo', semester: '9', major: 'ISC'  },
